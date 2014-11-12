@@ -1,13 +1,13 @@
 language: ruby
 rvm:
   - 1.9.3
- # - 2.1
-  #- jruby
+  - 2.1
+  - jruby
 gemfile:
   - Gemfile
 #  - gemfiles/activerecord31.gemfile
  # - gemfiles/activerecord32.gemfile
- # - gemfiles/activerecord40.gemfile
+  - gemfiles/activerecord40.gemfile
 script: bundle exec rake test
 before_script:
   #- gem uninstall mysql2
