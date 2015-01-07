@@ -1,8 +1,9 @@
 language: ruby
 
 rvm:
-  #- 1.9.3
-  #- 2.1
+  - 1.9.3
+  - 2.2
+  - 2.1
   - jruby
 gemfile:
   - Gemfile
@@ -16,3 +17,4 @@ before_script:
   - mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
   - psql -c 'create database groupdate_test;' -U postgres
   #- bundle install
+build_image: shippable/minv2
